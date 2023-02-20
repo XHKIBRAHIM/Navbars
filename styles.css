@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    margin: 0 10px;
+    position: relative;
+}
+ul li a{
+    text-decoration: none;
+}
+ul li::after{
+    background-color: white;
+    width:0;
+    height: 3px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+ul li:hover::after{
+    width: 100%;
+}
+body{
+    background: url(./images.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
